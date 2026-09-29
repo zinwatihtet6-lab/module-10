@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content:center;
+        }
+
+        .card-box{
+            background: gray;
+            padding: 25px;
+            width: 220px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-between;
+        }
+        .card-box h3{
+            color:white;
+            margin-top:0;
+        }
+
+        .icon-box{
+            width:60px;
+            height:60px;
+            background-color:blue;
+            color:white;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            margin:20px 0;
+        }
+
+        @keyframes Kendrick{
+            from{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .anim-fade-in{
+            animation: Kendrick 1.5s infinite;
+        }
+        @keyframes pulse{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .heart{
+            animation: pulse 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class="card-box">
+            <h3>Fade</h3>
+            <div class="icon-box anim-fade-in">Fade</div>
+        </div>
+        <div class="card-box">
+            <h3>Plus</h3>
+            <div class="icon-box heart">Puls</div>
+        </div>
+        <div class="card-box">
+            <h3>Ok</h3>
+            <div class="icon-box">Ok</div>
+        </div>
+        <div class="card-box">
+            <h3>Kendrick</h3>
+            <div class="icon-box">Kendrick</div>
+        </div>
+        <div class="card-box">
+            <h3>?</h3>
+            <div class="icon-box">?</div>
+        </div>
+    </div>
+</body>
+</html>

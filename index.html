@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.x-icon" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Panel-X</a>
+
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Stop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+             </ul>
+             <i class="fa fa-bars"></i>
+        </nav>
+    </header>
+    <main>
+        <section id="silder">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/slider1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/slider2.jpg" alt="">
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-scrollbar"></div>
+
+            <div class="swiper-pagination"></div>
+      </div>
+        </section>
+
+        <section id="about_us"></section>
+            <div class="about_container">
+                <div class="left">
+                    <img src="images/about_us.jpg" alt="">
+                </div>
+
+                <div class="right">
+                    <small>About us</small>
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum cum quas corrupti autem nihil consectetur alias qui explicabo reiciendis eos! Commodi suscipit ipsa eos quae distinctio eum exercitationem itaque porro?</p>
+                </div>
+            </div>
+
+            
+
+        <section id="services">
+            <div class="service_container">
+                <h1>Why shop with us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam natus tenetur eos rem quibusdam. Harum incidunt culpa commodi nisi rem laudantium nesciunt corrupti, rerum est, iure soluta beatae. Reiciendis.</p>
+
+                <div class="service_cards">
+                    <div class="card">
+                        <i class="fa-regular fa-truck"></i>
+                        <h2>Fast Delivery</h2>
+                        <p>Free shipping to all cities</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-shield"></i>
+                        <h2>Secure Payment</h2>
+                        <p>Your payment is secure with our enctyped system</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-headset"></i>
+                        <h2>24/7 Support</h2>
+                        <p>Our dedicated team is here to help you anytime</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2016 My Website. All right reserve.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        loop: true,
+        autoplay: {delay: 3000,},
+        speed: 2000,
+        effect: 'fade', //'slide', 'cube', 'coverflow', 'flip'
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        scrollbar: {
+            el: ".swiper-scrollbar",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+    <scirpt>
+      
+    </scirpt>
+    </body>
+</html>
